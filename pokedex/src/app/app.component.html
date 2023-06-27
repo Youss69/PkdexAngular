@@ -1,0 +1,13 @@
+<h1>Pokedex</h1>
+
+<p [textContent]="">Il y a {{numberOfPokemon}} pokemons.</p>
+<!-- <p [textContent]="numberOfPokemon" ></p> -->
+<p>{{somePokemon.name}} est le premier pokemon</p>
+<px-showpkmn></px-showpkmn>
+
+<button (click)="displayPokemon()" >Afficher les starters!!</button>
+<div *ngIf="pokemons.length >= 3">
+<p *ngFor="let pokemon of pokemons">
+    {{pokemon.name}}
+</p>
+</div>
